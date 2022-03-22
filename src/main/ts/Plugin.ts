@@ -351,6 +351,20 @@ const setup = (editor, url) => {
             ],
             advanced: [
                 {
+                    name: 'Triangle Equations',
+                    buttons: [
+                        {
+                            cmd: true,
+                            text: '\\placeholder{}^2+\\placeholder{}^2 = \\placeholder{}^2',
+                        },
+                        {
+                            cmd: true,
+                            text: 'A=\\frac{b*h}{2}',
+                            latex: 'A=\\frac{\\placeholder{}*\\placeholder{}}{2}',
+                        },
+                    ],
+                },
+                {
                     name: 'Trigonometry',
                     buttons: [
                         {
@@ -551,8 +565,8 @@ const setup = (editor, url) => {
                 text: '\\div',
             },
             {
-                text: 'y^x',
-                latex: '^',
+                text: 'x^n',
+                latex: '\\placeholder{}^\\placeholder{}',
                 cmd: true,
             },
             {
@@ -561,8 +575,8 @@ const setup = (editor, url) => {
                 cmd: true,
             },
             {
+                text: '\\sqrt[n]{x}',
                 latex: '\\sqrt[\\placeholder{}]{\\placeholder{}}',
-                text: '\\sqrt[\\placeholder{n}]{\\placeholder{x}}',
                 cmd: true,
             },
             {
@@ -572,6 +586,18 @@ const setup = (editor, url) => {
             },
             {
                 text: 'e^x',
+            },
+            {
+                cmd: false,
+                text: '\\sin',
+            },
+            {
+                cmd: false,
+                text: '\\cos',
+            },
+            {
+                cmd: false,
+                text: '\\tan',
             },
         ];
     }

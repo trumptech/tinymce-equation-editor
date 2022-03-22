@@ -160,7 +160,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [
         'clean',
         'tslint',
-        'shell',
+        // 'shell',
         'rollup',
         'uglify',
         'concat',
