@@ -14,7 +14,6 @@ function init(selector, inline: boolean) {
         plugins: 'code equation-editor',
         toolbar: 'equation-editor',
         extended_valid_elements : 'span[class|style|data-latex]',
-        keep_styles: false,
         content_css: [
             'https://unpkg.com/mathlive@0.35.0/dist/mathlive.core.css',
             'https://unpkg.com/mathlive@0.35.0/dist/mathlive.css'
